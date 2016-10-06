@@ -1,0 +1,100 @@
+/*  Header START*/
+body, html{
+  height: 100%;
+}
+.header {
+  height: 110px;
+  vertical-align: middle;
+  text-align: center;
+}
+.header-image {
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+}
+.header img {
+  max-height: 100px;
+  width: auto;
+}
+/* Header END*/
+
+/* Navigation START*/
+.navbar-nav {
+  margin: 0 auto;
+  float: none;
+  display: block;
+  max-width: 480px;
+}
+.navbar-nav li a{
+  font-weight: bold;
+  color: #8e8e8e;
+}
+.navbar-nav li a:hover {
+  text-decoration: underline;
+}
+/* Navigation END*/
+
+/*  Slider START*/
+.slider {
+  height: 50%;
+  margin-bottom: 30px;
+}
+.slider .row {
+  height: 100%;
+  position: relative;
+}
+.single-slide {
+  display: none;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.single-slide img {
+  width: 100%;
+  display: inline-block;
+}
+.active-slide {
+  display: block;
+  height: 100%;
+}
+.arrow-left {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  height: 10%;
+  width: auto;
+}
+.arrow-right {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  height: 10%;
+  width: auto;
+}
+/* Slider END*/
+
+/*  Articles START*/
+.article {
+  position: relative;
+}
+.article-hexagon {
+  position: absolute;
+  margin: 0 auto;
+  width: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.article-hexagon img {
+  height: 100px;
+}
+.article-content {
+  margin-top: 50px;
+  border-radius: 7px;
+  min-height: 200px;
+  background-color: #4c4c4c;
+}
+/* Articles END*/
