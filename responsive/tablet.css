@@ -1,0 +1,5 @@
+@media only screen and  (max-width: 1200px) {
+    .article .col-md-3 {
+      width: 50%;
+    }
+}
