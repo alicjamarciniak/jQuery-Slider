@@ -1,16 +1,16 @@
 $(document).ready(function() {
 
-  // var num = 10; //number of pixels before modifying styles
-  // $(window).bind('scroll', function (e) {
-  //   e.preventDefault();
-  //     if ($(window).scrollTop() > num) {
-  //         $('.navbar-sticky').addClass('fixed');
-  //         $('.header').addClass('header-fixed');
-  //     } else {
-  //         $('.navbar-sticky').removeClass('fixed');
-  //         $('.header').removeClass('header-fixed');
-  //     }
-  // });
+  var num = 10; //number of pixels before modifying styles
+  $(window).bind('scroll', function (e) {
+    e.preventDefault();
+      if ($(window).scrollTop() > num) {
+          $('.navbar-sticky').addClass('fixed');
+          $('.header').addClass('header-fixed');
+      } else {
+          $('.navbar-sticky').removeClass('fixed');
+          $('.header').removeClass('header-fixed');
+      }
+  });
 
   $(document).on('click', function (e) {
       if (e.originalEvent.defaultPrevented) return;
@@ -76,4 +76,9 @@ $(document).ready(function() {
 
   /* slider END */
 
+  /* articles START */
+    $('.article-hexagon').on('click', function() {
+      $(this).siblings('.article-content').slideToggle('slow');
+    });
+  /* articles END */
 });

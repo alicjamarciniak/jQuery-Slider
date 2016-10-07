@@ -1,8 +1,9 @@
-/*  Header START*/
 body, html{
   height: 100%;
   position: relative;
 }
+
+/*  Header START*/
 .header {
   margin: 40px 0 20px 0;
   height: 110px;
@@ -23,7 +24,7 @@ body, html{
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 3;
+    z-index: 100;
     width: auto;
 }
 .header-fixed img {
@@ -94,7 +95,6 @@ body, html{
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
 }
-
 .arrow-left {
   position: absolute;
   margin: auto 0;
@@ -116,31 +116,85 @@ body, html{
 /* Slider END*/
 
 /*  Articles START*/
+.articles {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .article {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  min-height: 100px;
+  padding-top: 50px;
 }
 .article-hexagon {
   position: absolute;
   margin: 0 auto;
+  padding-bottom: 40px;
   width: 100px;
-  top: 50px;
+  height: 140px;
+  top: 0;
   left: 0;
   right: 0;
 }
-.article-hexagon img {
+.article-hexagon img.hexagon {
+  position: absolute;
+  z-index: 2;
   height: 100px;
 }
+.heaxagon-icon {
+  position: absolute;
+  margin: auto;
+  z-index: 3;
+  height: 40px;
+  width: auto;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
 .article-content {
-  margin-top: 100px;
+  display: none;
   border-radius: 7px;
-  min-height: 300px;
+  overflow: hidden;
+  min-height: 1px;
+  padding: 30px 15px 30px;
   background-color: #4c4c4c;
+}
+.article-content .title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00ffff;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.article-content .description {
+  text-align: justify;
+  color: #FFFFFF;
 }
 /* Articles END*/
 
+/* About START */
+.about .jumbotron {
+  border-radius: 0;
+}
+.about .title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00ffff;
+  font-family: Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.about .jumbotron .description {
+  font-size: 18px;
+  text-align: justify;
+}
+/* About END */
+
+/* Footer START */
 footer {
   height: 50px;
   text-align: center;
   line-height: 50px;
 }
+/* Footer END */
