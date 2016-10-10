@@ -7,6 +7,7 @@ body, html{
 .header {
   margin: 40px 0 20px 0;
   height: 110px;
+  width: 100%;
   vertical-align: middle;
   text-align: center;
 }
@@ -34,14 +35,19 @@ body, html{
 /* Header END*/
 
 /* Navigation START*/
-.navbar-sticky {
+.navbar-header {
     background-color: #FFFFFF;
+    height: 72px;
+    z-index: 100;
+}
+.navbar-sticky {
     width: 100%;
+    background-color: #FFFFFF;
 }
 .fixed {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 4;
 }
 .navbar-simple {
   background-color: transparent;;
@@ -52,6 +58,7 @@ body, html{
   float: none;
   display: block;
   max-width: 480px;
+  padding-top: 10px;
 }
 .navbar-nav li a{
   font-weight: bold;
@@ -68,32 +75,46 @@ body, html{
   text-decoration: underline;
   background-color: transparent;
 }
+.navbar{
+  margin-bottom: 0;
+}
 /* Navigation END*/
 
 /*  Slider START*/
 .slider {
   height: 50%;
   margin-bottom: 30px;
+  margin-top: 72px;
 }
-.slider .row {
+.slider-inner {
   height: 100%;
   position: relative;
+  padding: 0;
+}
+.slider-sticky {
+  margin-top: 9S0px;
 }
 .single-slide {
   display: none;
   overflow: hidden;
   vertical-align: middle;
 }
+.single-slide:first-child {
+  display: block;
+}
 .single-slide img {
   width: 100%;
   display: inline-block;
 }
 .active-slide {
-  display: block;
+  /*display: block;*/
   height: 100%;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
+}
+.removed-slide {
+  display: none !important;
 }
 .arrow-left {
   position: absolute;
@@ -193,8 +214,24 @@ body, html{
 
 /* Footer START */
 footer {
+  margin-top: 70px;
   height: 50px;
   text-align: center;
   line-height: 50px;
+  position: relative;
 }
+footer p {
+  display: inline-block;
+}
+.social-icons {
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+}
+.social-icons img {
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+}
+
 /* Footer END */
